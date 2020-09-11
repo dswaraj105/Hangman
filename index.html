@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/app.css">
+  <script src="./assets/app.js" defer></script>
+  <title>Hangman</title>
+</head>
+<body>
+  <h2 class="title">HANGMAN</h2>
+  <H6 class="game-description">Find the hidden word - Enter a letter</H6>
+  <div class="main">
+    <svg height="250" width="200" class="hangman">
+      <line x1="40" y1="20" x2="120" y2="20"/>
+      <line x1="40" y1="20" x2="40" y2="230"/>
+      <line x1="0" y1="230" x2="80" y2="230"/>
+      <line x1="120" y1="20" x2="120" y2="50"/>
+      
+      <!-- person -->
+      <circle cx="120" cy="70"  r="20" class="body-part"/>
+      <line x1="120" y1="90" x2="120" y2="150" class="body-part"/>
+
+      <line x1="120" y1="90" x2="155" y2="120" class="body-part"/>
+      <line x1="120" y1="90" x2="85" y2="120" class="body-part"/>
+      
+      <line x1="120" y1="150" x2="155" y2="180" class="body-part"/>
+      <line x1="120" y1="150" x2="85" y2="180" class="body-part"/>    
+    </svg>
+
+    <div class="wrong-section">
+      <h4 class="hide">Wrong</h4>
+      <div class="wrong-letters">
+        <!-- <div class="wrong-letters">d</div> -->
+      </div>
+    </div>
+  </div>
+
+  <div class="words-container">
+    <!-- <div class="letters show-letter">D</div>
+    <div class="letters show-letter">E</div> -->
+  </div>
+
+  <!-- final massege container -->
+  <div class="popup-container">
+    <div class="popup">
+      <h2 class="final-message"></h2>
+      <button id="play-again">Play Again</button>
+    </div>
+  </div>
+
+  <!-- notification from bottom -->
+  <div id="notification-container" class="notification">
+    <p>You have already used this letter</p>
+  </div>
+
+</body>
+</html>

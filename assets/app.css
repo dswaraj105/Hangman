@@ -1,0 +1,141 @@
+/* imports */
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #34495e;
+  text-align: center;
+  color: #e9e5e5;
+  padding-top: 10px;
+  height: 100vh;
+}
+
+.title{
+  font-size: 2.2rem;
+  margin: 20px;
+}
+
+.game-description{
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+}
+
+.main{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 50px 0 20px 0;
+}
+
+.hangman{
+  fill: transparent;
+  stroke: #ffffff;
+  stroke-width: 4px;
+  stroke-linecap: round;
+}
+
+.body-part{
+  display: none;
+}
+
+.loose{       /* add to body to show */
+  display: inline;
+}
+
+.wrong-section{
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: red;
+}
+
+.wrong-section >div{
+  text-align: end;
+  margin-top: 10px;
+}
+
+.wrong-letters{
+  margin: 0;
+  padding: 0;
+}
+
+.words-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 45px;
+}
+
+.letters{
+  margin: 5px;
+  padding: 0 5px;
+  border-bottom: 4px solid #e9e5e5;
+  color: #34495e;
+}
+
+.show-letter{
+  color: #e9e5e5;
+}
+
+.popup-container{
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.3);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* display: flex; */
+  align-items: flex-start;
+  justify-content: center;
+  display: none;
+}
+
+.show-popup{         /*add to popup container to show */
+  display: flex;
+}
+
+.popup{
+  margin-top: 420px;
+  background-color: #4788ca;
+  padding: 10px 60px;
+  border-radius: 5px;
+}
+
+#play-again{
+  border: 0;
+  padding: 5px 20px;
+  margin-top: 10px;
+  border-radius: 5px;
+  color: #4788ca;
+  font-weight: 700;
+}
+
+.notification{
+  background-color: rgba(0, 0, 0, 0.3);
+  width:300px;
+  padding: 10px;
+  border-radius: 5px 5px 0 0;
+  margin: auto;
+  position: absolute;
+  bottom: 0;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  display: none;
+}
+
+.show-notification{     /* add to notification to display  */
+  display: block;
+}
+
+/* styles commom in the page */
+.hide{
+  opacity: 0;
+}
+
+.red{
+  stroke: rgb(240, 70, 70);
+} 
